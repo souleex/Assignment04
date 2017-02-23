@@ -1,0 +1,35 @@
+body {
+    background-image: url(../images/gallery/b807c2282ab0a491bd5c5c1051c6d312_rP0kQjJ.jpg);
+    background-size: 1920px 1080px;
+}
+
+.contact-form {
+    height: 565px;
+}
+
+.sidebar-contact-us {
+    height: 565px;
+}
+
+.sidebar-contact-us b{
+    font-size: 20px;
+    font-style: underline;
+}
+
+.sidebar-links {
+    list-style-type: none;
+}
+
+.content-top {
+    background-color:transparent;
+}
+
+.content-middle {
+    float: right;
+    margin-right: 222px;
+}
+
+#message {
+    width:100%;
+    height:400px;
+}
