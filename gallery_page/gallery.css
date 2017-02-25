@@ -1,0 +1,24 @@
+.main-header h1 {
+    padding-left: 80px;
+}
+
+#company_logo {
+    max-height:100%;
+    max-width:100px;
+    float:left;
+}
+
+.image-table img {
+    max-width: 100%;
+    max-height: 190px;
+    width: 500px;
+    height: 600px;
+}
+
+.image-table tbody tr td {
+    font-size: .75em;
+}
+
+.image-table tbody tr td a img:hover{
+    width: 2500px;
+}
