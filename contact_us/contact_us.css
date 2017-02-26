@@ -1,6 +1,5 @@
-body {
-    background-image: url(../images/gallery/b807c2282ab0a491bd5c5c1051c6d312_rP0kQjJ.jpg);
-    background-size: 1920px 1080px;
+.main-header h1 {
+    text-align:center;
 }
 
 .contact-form {
@@ -30,6 +29,7 @@ body {
 }
 
 #message {
+    max-width:675px;
     width:100%;
     height:400px;
 }

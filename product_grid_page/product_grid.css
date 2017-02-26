@@ -1,0 +1,55 @@
+.main-content {
+    height:550px;
+}
+
+.sidebar {
+    height:550px;
+}
+
+.main-header h1 {
+    text-align:center;
+}
+
+#company_logo {
+    max-height:100%;
+    max-width:100px;
+    float:left;
+    margin-left:13.5%;
+    border:solid;
+    border-width:1px;
+}
+
+.div-prod-table h1 {
+    text-align:center;
+    border-bottom:solid;
+    border-bottom-width:2px;
+}
+
+table.product-table {
+    width:100%;
+}
+table.product-table tr {
+    padding:3px 5px;
+    background-color:ghostwhite;
+    border:1px solid #CCC;
+    transition-duration:0.7s;
+}
+table.product-table tr:nth-child(even) {
+    background-color:#CCC;
+}
+table.product-table tr:hover {
+    background-color:yellow;
+}
+
+table.product-table tr td img{
+    max-height:25px;
+    max-width: 25px;
+    border:solid;
+    border-width:1px;
+    display:block;
+    margin:auto;
+}
+
+table.product-table tr td img:hover {
+    transform: scale(5);
+}

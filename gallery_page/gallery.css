@@ -3,13 +3,14 @@
 }
 
 .main-header h1 {
-    padding-left: 80px;
+    text-align:center;
 }
 
 #company_logo {
     max-height:100%;
     max-width:100px;
     float:left;
+    margin-left:13.5%;
 }
 
 .gallery h1 {
