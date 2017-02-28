@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <h2>Login Form</h2>
+        <form name="login">
+        <div class="login">
+        <input type="text" name="username" id="id_username" placeholder="Your username">
+        <input type="password" name="password" id="id_password" placeholder="Your password">
+        <input type="button" onclick="check()" value="login"
+        </div>
+        </form>>
+    </div>
+    <script language="javascript">
+    function check()
+    {
+        var userName = document.getElementById('id_username').value.toLowerCase();
+        var passWord = document.getElementById('id_password').value;
+
+        if(userName=="sou" || passWord=='123')
+        {
+            setTimeout(() => {window.location.href = "../homepage/homepage.html", 2000});
+        }else{
+            alert("The username and password you entered doesn't match.'");
+        }
+    }
+    </script>
+</body>
+    <footer class="footer box-shadow">
+        <p class="copyright">
+            (c) Created by Sou Lee & Mike Dong
+        </p>
+    </footer>
+</html>

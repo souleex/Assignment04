@@ -9,6 +9,9 @@
                 min-height:100%;
                 display:flex;
                 flex-direction:column;
+                    background-image: url(../homepage/background.png);
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
                 
             }
             .wrapper {
