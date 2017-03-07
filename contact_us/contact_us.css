@@ -2,6 +2,17 @@
     text-align:center;
 }
 
+#company_logo {
+    max-height:100%;
+    max-width:100px;
+    float:left;
+    margin-left:13.5%;
+}
+
+.main-header h1 {
+    text-align:center;
+}
+
 .contact-form {
     height: 565px;
 }
@@ -11,7 +22,7 @@
 }
 
 .sidebar-contact-us b{
-    font-size: 20px;
+    /*font-size: 20px;*/
     font-style: underline;
 }
 

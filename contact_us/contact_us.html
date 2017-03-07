@@ -8,8 +8,8 @@
 <body>
     <div class="wrapper">
         <header class="main-header box-shadow">
-            
-            <h1>Contact Us</h1>
+            <img class="logo" id="company_logo" src="../img/logo.gif">
+            <h1>Sou &amp; Mike's Cookies</h1>
         </header>
         <section class="content-bottom">
             <aside class="sidebar sidebar-contact-us"><b>Navigation</b>
@@ -18,7 +18,7 @@
                     <li><a href="../contact_us/contact_us.html">Contact Us</a></li>
                     <li><a href="../gallery_page/gallery.html">Gallery</a></li>
                     <li><a href="../product_grid_page/product_grid.html">Products</a></li>
-                    <li><a href="https://www.mrsfields.com/" target="">Other Cookies</a></li>
+                    <li><a href="../homepage/homepage.html" target="">Home Page</a></li>
                     <li><a href="../login page/login.html" target="">Logout</a></li>
                 </ul>
             </aside>
@@ -33,7 +33,7 @@
                         <input class="submit-lastName type="text" id="lastName"></input>
                         <label for="yourEmail">Your Email:</label>
                         <input class="submit-email type="text" id="email"></input>
-                        <button onclick="login(2000)" id="btn-submit" class="submit-button">Submit</button>
+                        <button onclick="send_response(3000)" id="btn-submit" class="submit-button">Submit</button>
                     </div>
                 </article>
         </section>
@@ -43,5 +43,51 @@
             (c) Created by Mike Dong &amp; Sou Lee
         </p>
     </footer>
+            <script>
+            function send_response(myDuration)
+            {
+                var firstName = document.getElementById('firstName');
+                var lastName = document.getElementById('lastName');
+                var yourEmail = document.getElementById('email');
+                var yourMessage = document.getElementById('message');
+                var myNotification = document.getElementById('error-message');
+                //alert(firstName + " " + lastName + " " + yourEmail + " " + yourMessage);
+                //check to see if the element "error-message" exists, and create it if it does not exist 
+                if (myNotification == null)
+                {
+                    myNotification = document.createElement("div");
+                }else{
+                    alert("div element exists!");
+                }
+                //dyanmically create it's attributes
+                myNotification.setAttribute("id", "error-message");
+                //myNotification.setAttribute("style","position:absolute;top:425px;background-color:grey;width:200px;border-radius:7px;");
+                
+                //check to see if user name and password are correct upon button press
+                //display appropriate message depending on condition
+                if (!firstName.value.toLowerCase() || !lastName.value.toLowerCase() || !yourEmail.value.toLowerCase())
+                {
+                    myNotification.innerHTML = 'Please make sure you provided a first and last name along with your email!';
+                    //removes the node after a set duration
+                    setTimeout(function() {myNotification.parentNode.removeChild(myNotification);}, myDuration);
+                }
+                else
+                {
+                    myNotification.innerHTML = 'Your message has been received!';
+                    firstName.value = null;
+                    lastName.value = null;
+                    yourEmail.value = null;
+                    yourMessage.value = null;
+                    setTimeout(function() {myNotification.parentNode.removeChild(myNotification);}, myDuration);
+                   /// setTimeout(window.location.href = "./about/about.html", 2000);
+                    //after a set duration, proceed to page redirection
+                    //setTimeout(() => {window.location.href = "./about/about.html"},myDuration);
+                    
+                }
+                
+
+                document.getElementById("contact-form-input").appendChild(myNotification);
+            }
+        </script>
 </body>
 </html>
