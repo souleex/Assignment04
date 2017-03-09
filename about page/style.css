@@ -1,3 +1,6 @@
+main-header h1 {
+    text-align: center;
+}
 .header img {
     float: center;
     width: 100px;
@@ -5,7 +8,7 @@
     background: skyblue;
 }
 .header h1 {
-    position: relative;
+    position: center;
     top: 18px;
     left: 10px;
 }
@@ -17,6 +20,18 @@
     margin-top: 5px;
     padding: 20px;
 }
+#left {
+    margin-top: -390px;
+    display: block;
+    padding: 7px;
+    text-decoration: none;
+}
+.img logo {
+    width: 100px;
+    margin: 0px;
+    display: inline-block;
+}
+
 footer {
     width: 100%;
     height: 50px;
@@ -31,11 +46,37 @@ footer {
     width: 100%;
     text-align: center;
     padding: 15px 0;
-    margin-top: 360px;
+    margin-top: 0px;
 }
 .box-shadow {
     box-shadow: inset 0px 0px 50px 0px #ABABAB, 1px 1px 5px 1px #242424;
     -webkit-box-shadow: inset 0px 0px 50px 0px #ABABAB, 1px 1px 5px 1px #242424;
     -moz-box-shadow: inset 0px 0px 50px 0px #ABABAB, 1px 1px 5px 1px #242424;
     -o-box-shadow: inset 0px 0px 50px 0px #ABABAB, 1px 1px 5px 1px #242424;
+}
+
+.sidebar {
+    float: left;
+    background-color: #f1f1f1;
+    position: relative;
+    top:10px;
+}
+
+.sidebar-links {
+    background-color: #f1f1f1;
+    list-style:none;
+}
+.sidebar-links li {
+    border: 1px solid #CCC;
+    border-top: 1px solid #FFF;
+}
+.sidebar-links a {
+    display: block;
+    padding: 7px;
+    text-decoration: none;
+    transition-duration: 0.7s;
+}
+.sidebar-links a:hover {
+    background-color: #CCC;
+    color: #000;
 }

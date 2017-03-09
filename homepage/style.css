@@ -21,13 +21,13 @@ body {
     margin: 0 auto;
 }
 #body {
-    width: 521px;
+    width: 490px;
     float: left;
     padding-left: 16px;
     background-color: slategray
 }
 #left {
-    /*width: 201px;
+    /*width: 190px;
     float: left;
     background-color: yellowgreen;
     padding-right: 10px;*/

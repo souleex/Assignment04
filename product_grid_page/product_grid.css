@@ -34,9 +34,15 @@ table.product-table tr {
     border:1px solid #CCC;
     transition-duration:0.7s;
 }
+
+table.product-table tr td {
+    padding: 3px;
+}
+
 table.product-table tr:nth-child(even) {
     background-color:#CCC;
 }
+
 table.product-table tr:hover {
     background-color:yellow;
 }

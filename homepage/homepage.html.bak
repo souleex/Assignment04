@@ -13,13 +13,13 @@
     <div id="left">
     <h1>Links</h1>
 <section class="links to business">
-            <aside class="sidebar sidebar-navigation"><b>Navigation</b>
+            <aside class="sidebar three-column">
                 <ul class="sidebar-links">
                     <li><a href="../about page/about page.html" target="">About Page</a></li>
                     <li><a href="../contact_us/contact_us.html">Contact Us</a></li>
                     <li><a href="../gallery_page/gallery.html">Gallery</a></li>
                     <li><a href="../product_grid_page/product_grid.html">Products</a></li>
-                    <li><a href="../homepage/homepage.html" target="">Home Page</a></li>
+                    <li><a href="https://www.mrsfields.com/" target="">Other Cookies</a></li>
                     <li><a href="../login page/login.html" target="">Logout</a></li>
                 </ul>
             </aside>
@@ -41,13 +41,9 @@
          </div>
 	</div>
     <div id="right">
-        <h1>Recent Product Listing</h1>
-        <p>Our new line of cookies</p>
-        <p>We have just added new cookies to our line</p>
-        <p>We have added the Oreo cream filled cookie and</p>
-        <p>a double chocolate cookie</p></br>
-        <p>Check out our New Product Page</p>
-        <p>by hitting our Products Link on the left</p>
+        <h1>right column</h1>
+        <p>This is right side</p>
+        <p>Recent product listing for our business</p>
     </div>
 </div>
 </section>
